@@ -3,15 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import AuthProvider from './providers/AuthProvider';
 import BookmarkProvider from './providers/BookmarkProvider';
 
 ReactDOM.render(
-    <AuthProvider>
-        <BookmarkProvider>
-            <App />
-        </BookmarkProvider>
-    </AuthProvider>
+    <BookmarkProvider>
+        <App />
+    </BookmarkProvider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
