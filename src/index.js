@@ -6,6 +6,10 @@ import * as serviceWorker from './serviceWorker';
 import AuthProvider from './providers/AuthProvider';
 import BookmarkProvider from './providers/BookmarkProvider';
 
+require('dotenv').config()
+
+console.log(process.env)
+
 ReactDOM.render(
     <AuthProvider>
         <BookmarkProvider>

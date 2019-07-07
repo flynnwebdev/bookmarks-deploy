@@ -10,9 +10,7 @@ function App() {
   const { fetchBookmarks } = useContext(BookmarkContext)
 
   useEffect(() => {
-    login('admin@bar.com', 'hellothere').then(() => {
-      fetchBookmarks()
-    })
+    fetchBookmarks()
   }, [])
 
   return (
