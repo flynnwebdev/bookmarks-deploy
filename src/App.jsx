@@ -3,10 +3,8 @@ import './App.css';
 import { BrowserRouter, Route } from 'react-router-dom'
 import BookmarkList from './components/BookmarkList';
 import { BookmarkContext } from './providers/BookmarkProvider';
-import { AuthContext } from './providers/AuthProvider';
 
 function App() {
-  const { login } = useContext(AuthContext)
   const { fetchBookmarks } = useContext(BookmarkContext)
 
   useEffect(() => {

@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import AuthProvider from './providers/AuthProvider';
 import BookmarkProvider from './providers/BookmarkProvider';
 
 require('dotenv').config()
@@ -11,11 +10,9 @@ require('dotenv').config()
 console.log(process.env)
 
 ReactDOM.render(
-    <AuthProvider>
-        <BookmarkProvider>
-            <App />
-        </BookmarkProvider>
-    </AuthProvider>
+    <BookmarkProvider>
+        <App />
+    </BookmarkProvider>
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
