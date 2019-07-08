@@ -7,7 +7,7 @@ import { BookmarkContext } from './providers/BookmarkProvider';
 function App() {
   const { fetchBookmarks } = useContext(BookmarkContext)
 
-  useEffect(() => {
+  useEffect(() => { //
     fetchBookmarks()
   }, [])
 
