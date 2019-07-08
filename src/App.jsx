@@ -8,7 +8,7 @@ function App() {
   const { fetchBookmarks } = useContext(BookmarkContext)
 
   useEffect(() => {
-      fetchBookmarks()
+    fetchBookmarks()
   }, [])
 
   return (
