@@ -5,7 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import BookmarkProvider from './providers/BookmarkProvider';
 
-require('dotenv').config()
+require('dotenv').config() //
 
 console.log(process.env)
 
